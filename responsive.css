@@ -1,0 +1,51 @@
+@media all and (max-width:900px){
+  /*共通*/
+  h2{
+    font-size: 32px;
+  }
+  h3{
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+  }
+  
+  /*メインビジュアル*/
+  .main-visual{
+    margin-bottom: 10px;
+  }
+
+  /*MENU*/
+  .menu-wrap{
+    flex-direction: column;
+  }
+  .menu-left,.menu-right{
+    width: 100%;
+    padding: 0%;
+  }
+  .menu-left{
+    border-style: none;
+  }
+  .food{
+    margin-bottom: 40px;
+  }
+  .menu{
+    margin: 30px 0 110px 0;
+  }
+
+  /*ABOUT*/
+  .about ul{
+    flex-direction: column;
+  }
+  .about li{
+    width: 100%;
+  }
+  .about{
+    margin: 30px 0 80px 0;
+  }
+
+  /*LOCATION*/
+  .location{
+    margin: 30px 0 120px 0;
+  }
+
+}

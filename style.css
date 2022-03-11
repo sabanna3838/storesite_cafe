@@ -1,0 +1,250 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 100%;
+}
+body {
+  font-family: 'Helvetica Neue','Arial','Hiragino Sans','Hiragino Kaku Gothic ProN','Meiryo','sans-serif';
+  font-size: 14.4px;
+  color: #383E45;
+  background-color: #FFFFFF;
+}
+li {
+  list-style: none;
+}
+img{
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+}
+
+/*共通*/
+.container{
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.parallax-bg{
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h2{
+  font-size: 72px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 300px;
+}
+h3{
+  display: inline-block;
+  font-size: 40px;
+  color: #000000;
+  padding-bottom: 15px;
+  border-bottom: 6px solid #E03131;
+  margin-bottom: 70px;
+}
+.title{
+  text-align: center;
+}
+
+/*メインビジュアル*/
+.main-visual{
+  width: 100%;
+  background-image: url(img/mainvisual.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 20px;
+}
+.main-logo img{
+  position: absolute;
+  top: 40%;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+.main-visual a{
+  color: #FFFFFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #121212;
+  transition: 0.5s;
+}
+.main-visual a:hover{
+  color: #E03131;
+}
+.main-visual ul{
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 45px 0 0;
+}
+.main-visual li{
+  padding-left: 27px;
+}
+
+/*MENU*/
+.menu-bg{
+  background-image: url(img/menu.jpg);
+}
+dl{
+  width: 100%;
+}
+dt{
+  float: left;
+  clear: left;
+  width: 85%;
+  border-bottom: 1px dotted #000000;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+dd{
+  padding-bottom: 6px;
+  margin-bottom: 31px;
+  text-align: right;
+}
+.menu-wrap{
+  display: flex;
+}
+.menu-left,.menu-right{
+  width:50%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.food{
+  margin-bottom: 95px;
+}
+.menu-left{
+  border-right: 1px solid #000000;
+}
+.menu{
+  margin: 90px 0 180px 0;
+}
+
+/*ABOUT*/
+.about-bg{
+  background-image: url(img/about.jpg);
+}
+.about ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about li{
+  display: inline-block;
+  width: 45%;
+  padding-bottom: 45px;
+}
+.about{
+  margin: 80px 0 150px 0;
+}
+
+
+/*read more*/
+.read-btn{
+  text-align: center;
+}
+.btn {
+  margin: 0 auto;
+  width: 160px;
+  height: 50px;
+  line-height: 3.5;
+  display: inline-block;
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/*
+.btn::before 右の赤線
+.btn::after 下の赤線
+.btn span::before 左の赤線
+.btn span::after 上の赤線
+*/
+.btn::before,
+.btn::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+.btn span::before,
+.btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+.btn::before,
+.btn span::before {
+  width: 2px;
+  height: 50%;
+}
+.btn::after,
+.btn span::after {
+  width: 20%;
+  height: 2px;
+}
+/*
+ホバー時の縦の動作
+右の赤線と左の赤線の高さを100%にする
+*/
+.btn:hover::before,
+.btn span:hover::before {
+  height: 100%;
+}
+/*
+ホバー時の横の動作
+下の赤線と上の赤線の横幅を100%にする
+*/
+.btn:hover::after,
+.btn span:hover::after {
+  width: 100%;
+}
+
+/*LOCATION*/
+.location-bg{
+  background-image: url(img/location.jpg);
+}
+iframe{
+  margin-bottom: 20px;
+}
+.location p{
+  padding-bottom: 15px;
+}
+.location{
+  margin: 80px 0 160px 0;
+}
+
+/*フッター*/
+footer{
+  text-align: center;
+}
+footer p{
+  padding: 15px 0;
+  font-size: 10px;
+}
